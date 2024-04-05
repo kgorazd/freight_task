@@ -1,3 +1,27 @@
+### Setup:
+`bundle install`
+
+### Running examples in the console:
+`ruby solution_terminal_for_testing.rb`
+
+### Running interactive mode:
+`REPL=1 ruby solution_terminal_for_testing.rb`
+
+### Running server:
+`rackup -p 3000`
+and then visit
+`http://localhost:3000` examples are available from there
+
+### Running specs:
+`rspec spec`
+- specs in `roda_spec.rb` require running the server first
+- you can ommit them by using `rspec spec --tag ~@server_required`
+
+
+
+============================================================================
+# Original requirements:
+
 ## Background
 
 Shypple is a freight forwarder company. That means we help other companies to

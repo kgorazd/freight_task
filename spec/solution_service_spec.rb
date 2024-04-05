@@ -34,10 +34,8 @@ describe SolutionService do
     it 'calls #fastest_sailing' do
       result = SolutionService.fastest_sailing('CNSHA', 'NLRTM')
       expected_result = [
-        { 'origin_port' => 'CNSHA', 'destination_port' => 'ESBCN', 'departure_date' => '2022-01-29',
-          'arrival_date' => '2022-02-12', 'sailing_code' => 'ERXQ', 'rate' => '261.96', 'rate_currency' => 'EUR' },
-        { 'origin_port' => 'ESBCN', 'destination_port' => 'NLRTM', 'departure_date' => '2022-02-15',
-          'arrival_date' => '2022-03-29', 'sailing_code' => 'ETRF', 'rate' => '2.00', 'rate_currency' => 'USD' }
+        { 'origin_port' => 'CNSHA', 'destination_port' => 'NLRTM', 'departure_date' => '2022-01-29',
+          'arrival_date' => '2022-02-15', 'sailing_code' => 'QRST', 'rate' => '761.96', 'rate_currency' => 'EUR' }
       ]
 
       expect(result).to eq(expected_result)

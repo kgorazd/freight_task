@@ -5,22 +5,22 @@ class SailingFinder < BaseFinder
     best_direct_sailing(from, to, :cost_in_euro, earliest_departure_date)
   end
 
-  def cheapest_sailing(sailings_data)
-    best_sailing(sailings_data, :cost_in_euro)
-  end
-
   def fastets_direct_sailing(from, to, earliest_departure_date = nil)
     best_direct_sailing(from, to, :duration, earliest_departure_date)
-  end
-
-  def fastest_sailing(sailings_data)
-    best_sailing(sailings_data, :duration)
   end
 
   def best_direct_sailing(from, to, property, earliest_departure_date = nil)
     validate_sailing_property!(property)
 
     best_sailing(direct_sailings(from, to, earliest_departure_date), property)
+  end
+
+  def cheapest_sailing(sailings_data)
+    best_sailing(sailings_data, :cost_in_euro)
+  end
+
+  def fastest_sailing(sailings_data)
+    best_sailing(sailings_data, :duration)
   end
 
   def best_sailing(sailings_data, property)
