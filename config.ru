@@ -9,9 +9,9 @@ class App < Roda
     r.root do
       "<h1>Available routes:</h1><br/>
       <h2>
-        <a href='http://localhost:3000/api/cheapest_direct_sailing?from=CNSHA&to=NLRTM' />/api/cheapest_direct_sailing?from=CNSHA&to=NLRTM</a><br/>
-        <a href='http://localhost:3000/api/cheapest_sailing?from=CNSHA&to=NLRTM' />/api/cheapest_sailing?from=CNSHA&to=NLRTM</a><br/>
-        <a href='http://localhost:3000/api/fastest_sailing?from=CNSHA&to=NLRTM' />/api/fastest_sailing?from=CNSHA&to=NLRTM</a>
+        <a href='/api/cheapest_direct_sailing?from=CNSHA&to=NLRTM' />/api/cheapest_direct_sailing?from=CNSHA&to=NLRTM</a><br/>
+        <a href='/api/cheapest_sailing?from=CNSHA&to=NLRTM' />/api/cheapest_sailing?from=CNSHA&to=NLRTM</a><br/>
+        <a href='/api/fastest_sailing?from=CNSHA&to=NLRTM' />/api/fastest_sailing?from=CNSHA&to=NLRTM</a>
       </h2>"
     end
 

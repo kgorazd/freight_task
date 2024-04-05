@@ -1,3 +1,9 @@
+### Live demo:
+- UI: https://freight-task-ac16a39e7b67.herokuapp.com/
+- curl https://freight-task-ac16a39e7b67.herokuapp.com/api/cheapest_direct_sailing?from=CNSHA&to=NLRTM
+- curl https://freight-task-ac16a39e7b67.herokuapp.com/api/cheapest_sailing?from=CNSHA&to=NLRTM
+- curl https://freight-task-ac16a39e7b67.herokuapp.com/api/fastest_sailing?from=CNSHA&to=NLRTM
+
 ### Setup:
 `bundle install`
 
@@ -16,8 +22,6 @@ and then visit
 `rspec spec`
 - specs in `roda_spec.rb` require running the server first
 - you can ommit them by using `rspec spec --tag ~@server_required`
-
-
 
 ============================================================================
 # Original requirements:
